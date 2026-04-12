@@ -1,11 +1,10 @@
 # 🔥 Dennis Adalbert  
 
-### 💻 Fullstack Developer in Progress  
+### 💻 Fullstack Developer
 
-I'm Dennis, a Fullstack Developer focused on building modern web and mobile applications.  
-Currently finishing my **DAM (Desarrollo de Aplicaciones Multiplataforma)** studies in Spain 🇪🇸  
+I'm Dennis, a Fullstack Developer and AI-first Builder based in Spain. 
 
-🚀 Main Project: [RemmyApp](https://github.com/ComfyPenguin/RemmyApp)
+🚀 Main Project: aparcaloo.com
 
 ---
 
