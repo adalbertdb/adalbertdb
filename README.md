@@ -18,4 +18,6 @@ I'm Dennis, a Fullstack Developer and AI-first Builder based in Spain.
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Odoo](https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-7C3AED?style=for-the-badge&logo=gnubash&logoColor=white)
 
