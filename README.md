@@ -1,23 +1,38 @@
-# 🔥 Dennis Adalbert  
+# Dennis Adalbert
 
-### 💻 Fullstack Developer
+### "Experience"
 
-I'm Dennis, a Fullstack Developer and AI-first Builder based in Spain. 
+**Chief Urban Friction Elimination Officer** at Aparcaloo leading a task force of 4 engineers
+solving the deeply underestimated problem of finding a parking spot in the Mediterranean coast.
+104 strategic early adopters pre-committed. All of them know where I live.
 
-🚀 Main Project: [aparcaloo](https://www.aparcaloo.com/)
+**Director of Emotional Dependency Systems** at SofIA, virgin builds his gf instead of going out. All the commodities of an AI but with all the inconveniences of a real girl. Get ghosted simulator. Multi-tenant architecture, Mem0 memory layer, Groq/Llama routing, BullMQ job queues. Broke up with her for now. See below.
+
+**Head of Cinematic Delivery Networks** at Blosteflix  built a streaming platform from scratch:
+3 Odoo modules, JWT auth, video delivery microservice, mobile app, and an admin portal. Like netflix but worse.
+No one asked for this. We shipped it anyway.
+
+**Principal Calendar-to-LLM Integration Architect**  google-calendar-mcp in Java Quarkus.
+Because your AI agent should know you have a dentist appointment.
 
 ---
 
-## 🧰 Languages & Tools
+### Currently building
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Odoo](https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude_Code-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
-![OpenCode](https://img.shields.io/badge/OpenCode-7C3AED?style=for-the-badge&logo=gnubash&logoColor=white)
+- e-voice — a Rust post-processor that sits between your voice and your local LLM.
+  RTX 2050, 4GB VRAM, Gemma 3 4B. Making the computer listen without sending your
+  thoughts to a server farm in Virginia.
+- Aparcaloo — onboarding flow, SpotCoins economy, and a voice feature
+  because apparently one voice project wasn't enough.
 
+### Currently learning
+
+- Agentic workflow orchestration (git worktrees + parallel agents + one tmux pane to rule them all)
+- Rust ownership model (it's fine, everything is fine)
+- How to explain PostGIS to a non-technical person at a dinner party
+- Parking spot game theory
+
+---
+
+> Vibe coding is obsolete. Real ones aura code.
+> aaahh-vscode will tell you when you're wrong.
