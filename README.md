@@ -1,5 +1,5 @@
 # Dennis Adalbert
-
+Founder of BlosteSoftware. Ask a spanish guy what bloste means.
 ### "Experience"
 
 **Chief Urban Friction Elimination Officer** at Aparcaloo leading a task force of 4 engineers
@@ -21,7 +21,7 @@ Because your AI agent should know you have a dentist appointment.
 
 - e-voice — a Rust post-processor that sits between your voice and your local LLM.
   RTX 2050, 4GB VRAM, Gemma 3 4B. Making the computer listen without sending your
-  thoughts to a server farm in Virginia.
+  thoughts to a server farm in Virginia with the trade off that it will take off.
 - Aparcaloo — onboarding flow, SpotCoins economy, and a voice feature
   because apparently one voice project wasn't enough.
 
