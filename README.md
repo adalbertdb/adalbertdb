@@ -2,9 +2,8 @@
 Founder of BlosteSoftware. Ask a spanish guy what bloste means.
 ### "Experience"
 
-**Chief Urban Friction Elimination Officer** at Aparcaloo leading a task force of 4 engineers
-solving the deeply underestimated problem of finding a parking spot in the Mediterranean coast.
-104 strategic early adopters pre-committed. All of them know where I live. Learn more at [Aparcaloo.com](aparcaloo.com)
+Building **Aparcaloo**, a collaborative parking app for Gandía. More than 100 people have joined
+the pre-launch waitlist. [See the site](https://aparcaloo.com/).
 
 **Director of Emotional Dependency Systems** at SofIA, virgin builds his gf instead of going out. All the commodities of an AI but with all the inconveniences of a real girl. Get ghosted simulator. Multi-tenant architecture, Mem0 memory layer, Groq/Llama routing, BullMQ job queues. Broke up with her for now. See below.
 
