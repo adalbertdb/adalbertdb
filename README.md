@@ -1,11 +1,9 @@
 # Dennis Adalbert
-Founder of BlosteSoftware. Ask a spanish guy what bloste means.
+Founder of "Project I made w AI last weknd"
 ### "Experience"
 
 Building **Aparcaloo**, a collaborative parking app for Gandía. More than 100 people have joined
-the pre-launch waitlist. [See the site](https://aparcaloo.com/).
-
-**Director of Emotional Dependency Systems** at SofIA, virgin builds his gf instead of going out. All the commodities of an AI but with all the inconveniences of a real girl. Get ghosted simulator. Multi-tenant architecture, Mem0 memory layer, Groq/Llama routing, BullMQ job queues. Broke up with her for now. See below.
+the pre-launch waitlist. [See the site](https://aparcaloo.com/). See im a founder, pre-founding ofc. 
 
 **Head of Cinematic Delivery Networks** at Blosteflix  built a streaming platform from scratch:
 3 Odoo modules, JWT auth, video delivery microservice, mobile app, and an admin portal. Like netflix but worse.
