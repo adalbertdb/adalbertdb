@@ -3,7 +3,7 @@ Founder of "Project I made w AI last weknd"
 ### "Experience"
 
 Building **Aparcaloo**, a collaborative parking app for Gandía. More than 100 people have joined
-the pre-launch waitlist. [See the site](https://aparcaloo.com/). See im a founder, pre-founding ofc. 
+the pre-launch waitlist. [See the site](https://aparcaloo.com/). See? Im a founder, pre-founding ofc. 
 
 **Head of Cinematic Delivery Networks** at Blosteflix  built a streaming platform from scratch:
 3 Odoo modules, JWT auth, video delivery microservice, mobile app, and an admin portal. Like netflix but worse.
