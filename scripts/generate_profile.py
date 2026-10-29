@@ -10,6 +10,7 @@ Without a token the last known stats in stats_cache.json are reused.
 """
 
 import argparse
+import calendar
 import datetime as dt
 import html
 import io
@@ -28,20 +29,21 @@ CACHE = ROOT / "stats_cache.json"
 
 USER = "adalbertdb"
 # Used for "Uptime". Leave as None to count from the GitHub account creation date.
-BIRTHDAY = None  # e.g. dt.date(2003, 5, 17)
+BIRTHDAY = dt.date(2005, 5, 12)
 
 # Same fields as the original card. Edit freely; empty values are shown as "-".
 INFO = [
-    ("OS", "Windows 11, Linux, Android"),
+    ("OS", "Linux (Omarchy)"),
     ("Uptime", "{uptime}"),
-    ("Host", "Gandía, Spain"),
+    ("Host", "Comunidad Valenciana, Spain"),
     ("Kernel", "Founder @ Aparcaloo (pre-founding ofc)"),
-    ("IDE", "VS Code (aaahh-vscode), Claude Code"),
+    ("IDE", "Claude Code, nvim"),
     None,
     ("Languages.Programming", "Java, Rust, Python, JavaScript"),
     ("Languages.Computer", "HTML, CSS, JSON, SQL, PostGIS"),
     ("Languages.Real", "Spanish, English"),
     None,
+    ("Hobbies.General", "Videogames, cars, gym, airsoft"),
     ("Hobbies.Software", "Local LLMs, agentic workflows, MCP"),
     ("Hobbies.Hardware", "Squeezing Gemma 3 into 4GB of VRAM"),
     "Contact",
@@ -230,8 +232,12 @@ def uptime(stats):
     today = dt.date.today()
     years = today.year - start.year - ((today.month, today.day) < (start.month, start.day))
     months = (today.month - start.month - (today.day < start.day)) % 12
-    anniversary = today.replace(day=1)
-    days = (today - dt.date(anniversary.year, anniversary.month, min(start.day, 28))).days % 31
+    # Days since the last monthly anniversary.
+    y, m = (today.year, today.month) if today.day >= start.day else divmod(today.year * 12 + today.month - 2, 12)
+    if today.day < start.day:
+        m += 1
+    last = dt.date(y, m, min(start.day, calendar.monthrange(y, m)[1]))
+    days = (today - last).days
     return f"{years} years, {months} months, {days} days"
 
 
