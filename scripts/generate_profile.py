@@ -39,18 +39,13 @@ INFO = [
     ("Kernel", "Founder @ Aparcaloo (pre-founding ofc)"),
     ("IDE", "Claude Code, nvim"),
     None,
-    ("Languages.Programming", "Java, Rust, Python, JavaScript"),
-    ("Languages.Computer", "HTML, CSS, JSON, SQL, PostGIS"),
-    ("Languages.Real", "Spanish, English"),
+    ("Languages.Programming", "Java, Dart, Python, JavaScript"),
+    ("Languages.Computer", "HTML, CSS, JSON, SQL"),
+    ("Languages.Real", "Spanish, English, Valencian, Romanian"),
     None,
     ("Hobbies.General", "Videogames, cars, gym, airsoft"),
     ("Hobbies.Software", "Local LLMs, agentic workflows, MCP"),
     ("Hobbies.Hardware", "Squeezing Gemma 3 into 4GB of VRAM"),
-    "Contact",
-    ("Email.Personal", ""),
-    ("Email.Work", ""),
-    ("LinkedIn", ""),
-    ("Discord", ""),
     "GitHub Stats",
     "{stats}",
 ]
@@ -290,13 +285,15 @@ THEMES = {
 def render_svg(ascii_lines, info_lines, theme):
     c = THEMES[theme]
     font, line_h, char_w = 16, 20, 9.6
-    # The portrait uses a smaller font so it gets more detail at the same height as the info panel.
-    scale = min(1, len(info_lines) / len(ascii_lines))
+    # The portrait uses a smaller font so it gets more detail at about the same
+    # height as the info panel (but never so small it turns into noise).
+    scale = max(0.65, min(1, len(info_lines) / len(ascii_lines)))
     a_font, a_line = round(font * scale, 2), round(line_h * scale, 2)
     ascii_w = max(len(l) for l in ascii_lines) * char_w * scale
     info_x = round(15 + ascii_w + 25)
     height = round(max(len(ascii_lines) * a_line, len(info_lines) * line_h) + 30)
     width = int(info_x + INFO_WIDTH * char_w + 15)
+    info_y = round(30 + max(0, len(ascii_lines) * a_line - len(info_lines) * line_h) / 2)
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" '
@@ -314,12 +311,12 @@ def render_svg(ascii_lines, info_lines, theme):
         parts.append(f'<tspan x="15" y="{round(30 + i * a_line, 2)}">{html.escape(line)}</tspan>')
     parts.append("</text>")
 
-    parts.append(f'<text x="{info_x}" y="30" fill="{c["text"]}">')
+    parts.append(f'<text x="{info_x}" y="{info_y}" fill="{c["text"]}">')
     for i, segments in enumerate(info_lines):
         if not segments:
             continue
         spans = "".join(f'<tspan class="{cls}">{html.escape(t)}</tspan>' for t, cls in segments)
-        parts.append(f'<tspan x="{info_x}" y="{30 + i * line_h}">{spans}</tspan>')
+        parts.append(f'<tspan x="{info_x}" y="{info_y + i * line_h}">{spans}</tspan>')
     parts.append("</text>")
     parts.append("</svg>")
     return "\n".join(parts) + "\n"
@@ -332,12 +329,12 @@ def main():
     ap.add_argument("--print", action="store_true", help="also print the ASCII portrait to stdout")
     args = ap.parse_args()
 
+    info_lines = build_info(load_stats())
     ascii_lines = image_to_ascii(load_avatar(args.avatar), args.cols)
     if args.print:
         print("\n".join(ascii_lines))
     (ROOT / "ascii_avatar.txt").write_text("\n".join(ascii_lines) + "\n")
 
-    info_lines = build_info(load_stats())
     for theme in THEMES:
         (ROOT / f"{theme}_mode.svg").write_text(render_svg(ascii_lines, info_lines, theme))
     print("Wrote dark_mode.svg, light_mode.svg and ascii_avatar.txt")
