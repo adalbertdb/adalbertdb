@@ -21,7 +21,7 @@ import urllib.request
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from PIL import Image, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "stats_cache.json"
@@ -53,9 +53,9 @@ INFO = [
     "{stats}",
 ]
 
-ASCII_COLS = 46
+ASCII_COLS = 56
 INFO_WIDTH = 62  # characters per info line, dots fill the gap
-RAMP = " .'`^\",:;Il!i><~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+RAMP = " .:-=+*#%@"
 
 
 # ---------------------------------------------------------------- ASCII avatar
@@ -84,25 +84,36 @@ def background_mask(rgb):
 
 def image_to_ascii(img, cols=ASCII_COLS):
     img = ImageOps.exif_transpose(img).convert("RGB")
+    fg = ~background_mask(np.asarray(img, dtype=float))
+
+    # Crop to the head: its width comes from the top 60% of the picture so the
+    # shoulders don't shrink the face, and the crop keeps a portrait ratio.
+    ys, _ = np.nonzero(fg)
+    _, hx = np.nonzero(fg[: int(img.height * 0.6)])
+    hx0, hx1 = np.percentile(hx, [1, 99])
+    pad = (hx1 - hx0) * 0.15
+    x0, x1 = int(max(0, hx0 - pad)), int(min(img.width, hx1 + pad))
+    y0 = int(np.percentile(ys, 0.5))
+    y1 = int(min(img.height, y0 + (x1 - x0) * 1.25))
+    img, fg = img.crop((x0, y0, x1, y1)), fg[y0:y1, x0:x1]
     rows = int(cols * img.height / img.width * 0.5)  # glyphs are ~2x taller than wide
-    small = img.resize((cols, rows), Image.LANCZOS)
 
-    mask = background_mask(np.asarray(small, dtype=float))
+    # Local contrast: sharpen, then subtract a blurred copy so uneven lighting
+    # doesn't flatten one side of the face.
+    gray = ImageOps.grayscale(img).filter(ImageFilter.UnsharpMask(3, 160, 2))
+    local = np.asarray(gray, dtype=float) - 0.8 * np.asarray(gray.filter(ImageFilter.GaussianBlur(15)), dtype=float)
 
-    gray = ImageOps.grayscale(img)
-    gray = ImageEnhance.Contrast(ImageOps.autocontrast(gray, cutoff=2)).enhance(1.3)
-    edges = gray.filter(ImageFilter.FIND_EDGES).resize((cols, rows), Image.LANCZOS)
-    gray = gray.resize((cols, rows), Image.LANCZOS)
-
-    # Bright pixels -> dense glyphs (light text on a dark card). The floor keeps
-    # dark hair/clothes visible and the edge boost makes the features read.
-    density = 0.28 + np.asarray(gray, dtype=float) / 255 * 0.72
-    density = np.clip(density + np.asarray(edges, dtype=float) / 255 * 0.5, 0, 1)
+    # Equalize over the subject only (not the backdrop) so the whole ramp is used
+    # for skin, eyes, hair... Bright -> dense glyphs (light text on a dark card).
+    values = np.sort(local[fg])
+    equalized = np.searchsorted(values, local) / len(values)
+    density = np.asarray(Image.fromarray((equalized * 255).astype(np.uint8)).resize((cols, rows), Image.BOX), dtype=float) / 255
+    mask = np.asarray(Image.fromarray(fg.astype(np.uint8) * 255).resize((cols, rows), Image.BOX), dtype=float) < 128
 
     lines = []
     for y in range(rows):
         line = "".join(
-            " " if mask[y, x] else RAMP[int(density[y, x] * (len(RAMP) - 1))]
+            " " if mask[y, x] else RAMP[min(len(RAMP) - 1, int(density[y, x] * len(RAMP)))]
             for x in range(cols)
         )
         lines.append(line.rstrip())
@@ -273,11 +284,13 @@ THEMES = {
 def render_svg(ascii_lines, info_lines, theme):
     c = THEMES[theme]
     font, line_h, char_w = 16, 20, 9.6
-    ascii_w = max(len(l) for l in ascii_lines) * char_w
-    info_x = 15 + ascii_w + 25
-    rows = max(len(ascii_lines), len(info_lines))
+    # The portrait uses a smaller font so it gets more detail at the same height as the info panel.
+    scale = min(1, len(info_lines) / len(ascii_lines))
+    a_font, a_line = round(font * scale, 2), round(line_h * scale, 2)
+    ascii_w = max(len(l) for l in ascii_lines) * char_w * scale
+    info_x = round(15 + ascii_w + 25)
+    height = round(max(len(ascii_lines) * a_line, len(info_lines) * line_h) + 30)
     width = int(info_x + INFO_WIDTH * char_w + 15)
-    height = rows * line_h + 30
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" '
@@ -289,10 +302,10 @@ def render_svg(ascii_lines, info_lines, theme):
         "text, tspan {white-space: pre;}",
         "</style>",
         f'<rect width="{width}px" height="{height}px" fill="{c["bg"]}" rx="15"/>',
-        f'<text x="15" y="30" fill="{c["text"]}" class="ascii">',
+        f'<text x="15" y="30" fill="{c["text"]}" class="ascii" font-size="{a_font}px">',
     ]
     for i, line in enumerate(ascii_lines):
-        parts.append(f'<tspan x="15" y="{30 + i * line_h}">{html.escape(line)}</tspan>')
+        parts.append(f'<tspan x="15" y="{round(30 + i * a_line, 2)}">{html.escape(line)}</tspan>')
     parts.append("</text>")
 
     parts.append(f'<text x="{info_x}" y="30" fill="{c["text"]}">')

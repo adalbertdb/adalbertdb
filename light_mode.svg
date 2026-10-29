@@ -1,55 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1091px" height="470px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="998px" height="470px" font-size="16px">
 <style>
 @font-face { font-family: ConsolasFallback; src: local('Consolas'); size-adjust: 109%; }
 .key {fill: #953800;} .value {fill: #0a3069;} .cc {fill: #c2cfde;}
 .add {fill: #1a7f37;} .del {fill: #cf222e;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="1091px" height="470px" fill="#f6f8fa" rx="15"/>
-<text x="15" y="30" fill="#24292f" class="ascii">
-<tspan x="15" y="30">                    wdm0Zk</tspan>
-<tspan x="15" y="50">                Zn){}[{{{{jxQ</tspan>
-<tspan x="15" y="70">              Y]???}{[]]]]{}[)O</tspan>
-<tspan x="15" y="90">            k(??????[?{[????]{}c</tspan>
-<tspan x="15" y="110">           L]???][[][}|t)tvYLc1?/</tspan>
-<tspan x="15" y="130">           ]?)YUCZpbhha#8B$$$$wf]Z</tspan>
-<tspan x="15" y="150">           }?nZwpkM%B$$$$$@@@$$mjU</tspan>
-<tspan x="15" y="170">           {fCQwpkW@@$@@$$$$$$$BYY</tspan>
-<tspan x="15" y="190">          Z)UQJYUYzZo%&amp;#akqkM%$$pWW</tspan>
-<tspan x="15" y="210">          0fQCXxjjzu(C%&amp;Qrnd#8$@BM%</tspan>
-<tspan x="15" y="230">           fCOppqpbZnz%$@88%$$$$@W$</tspan>
-<tspan x="15" y="250">           aQJmb*WM0cC%$$&amp;M@@@$@$</tspan>
-<tspan x="15" y="270">             CvOhadUuXo@BWa&amp;@$$@</tspan>
-<tspan x="15" y="290">              uXdoZzcQqWB@#8@$@</tspan>
-<tspan x="15" y="310">              hnChhQUZqo%@B@$@</tspan>
-<tspan x="15" y="330">               nfxUpkho%$$@%%@</tspan>
-<tspan x="15" y="350">            a Qcur//nQqo#*M8@$8a</tspan>
-<tspan x="15" y="370">         Zx)]U0XJZqwLJQwMB$$$@B0|u0h</tspan>
-<tspan x="15" y="390">     Zu)?????]rXZh*W%&amp;#*8$@@@$$d????[fUd</tspan>
-<tspan x="15" y="410"> oCt]???????????tCkW$$$$$$$$$@p{????????[fUp</tspan>
-<tspan x="15" y="430">t??????????????????)rXQmwwZLv(??????????????[r</tspan>
-<tspan x="15" y="450">??????????????????????????????????????????????</tspan>
+<rect width="998px" height="470px" fill="#f6f8fa" rx="15"/>
+<text x="15" y="30" fill="#24292f" class="ascii" font-size="10.35px">
+<tspan x="15" y="30.0">                   +-::---==+====---=+</tspan>
+<tspan x="15" y="42.94">                =...::--=---====+--=-:.:+</tspan>
+<tspan x="15" y="55.88">             *..::.::=-+-==---:::--===:...=</tspan>
+<tspan x="15" y="68.82">            -.::::-::---=:-=-::::::-:---::::</tspan>
+<tspan x="15" y="81.76">          + .:::----::-==-=-=---:::-::::=:::.+</tspan>
+<tspan x="15" y="94.7">         :..:::::::-------:-=----::-::..--::..=</tspan>
+<tspan x="15" y="107.64">       * .::::::::....::::::-=-:::::::--=:::.. :</tspan>
+<tspan x="15" y="120.58">      = ....:::--=====--:::.::-=-=+#%%#%@%-::.. =</tspan>
+<tspan x="15" y="133.52">      -  ..-#%#****#%%%%%%##%%@@@@@%%@%%@@%=::...</tspan>
+<tspan x="15" y="146.46">      = ..:=*##*++**###%%%%%##%%###%%#%%@@@#=:...#</tspan>
+<tspan x="15" y="159.4">      + ..:=*+++++++**********#**+*#####%%@@+:...=</tspan>
+<tspan x="15" y="172.34">      * ..-=+++++++=+*******++*+++*######%%@%=::.:</tspan>
+<tspan x="15" y="185.28">      *  +*++++++++**#%%####++**#%%%%%%%%%%@%@...:</tspan>
+<tspan x="15" y="198.22">      -  #*++****##**#%%%%%%**#%#@@##@%#%%%%%@=.=%=</tspan>
+<tspan x="15" y="211.16">     .:: %+++-:.:::.  ::=+##*+=-:::.:--===+%%%%.%%:*</tspan>
+<tspan x="15" y="224.1">     :=:-#+==----=-:-+:...-*%%*=..: :-===+*%%%%=+%=*</tspan>
+<tspan x="15" y="237.04">      . -*=+++==---+*+==: -#@@%*-::-+#%%%##%%###.+*</tspan>
+<tspan x="15" y="249.98">      :.:+=+*#*##*+****=:::+@@%%%%###*+**#####*+=#*</tspan>
+<tspan x="15" y="262.92">      =:.=-==++**####*+=--:=%@@%@%**++**#####*=*%*</tspan>
+<tspan x="15" y="275.86">        ::--=+++**#%%#*-:::=%@@##+==+*######*=++</tspan>
+<tspan x="15" y="288.8">          -:--=**##%#*:-=-=#@@@*%+::=*##%##*+=</tspan>
+<tspan x="15" y="301.74">           ::::==#****--:..+=*#++#+==-=*****++</tspan>
+<tspan x="15" y="314.68">           :::--*#+++====-++-##%##****+**#**=</tspan>
+<tspan x="15" y="327.62">            :::-=#@%#-::--+*+***+**-:+####*+</tspan>
+<tspan x="15" y="340.56">             ::--+%%%*=--===-=+*%%#**+*##*+</tspan>
+<tspan x="15" y="353.5">              .:--+#***+==+===*#**######*=+</tspan>
+<tspan x="15" y="366.44">              .::--=*##%#+++++***%%%%#*+=#+</tspan>
+<tspan x="15" y="379.38">              :--::::-=**+**+*%%%%%*+--+##+</tspan>
+<tspan x="15" y="392.32">           *+-------:...-=+%-*#*+=--=**####*</tspan>
+<tspan x="15" y="405.26">       +- **======+++=-::..::::--+*#####%#%#:.=</tspan>
+<tspan x="15" y="418.2">    :     :%%*====++****+=====+#%####*####%%@=   .-+</tspan>
+<tspan x="15" y="431.14">-. ....::...+%++==++**###*+++==+*#####*#*#%@@* ...... :-</tspan>
+<tspan x="15" y="444.08">::::::::::::..+%#*******##*+++++++******#%@@@: .::::::::</tspan>
+<tspan x="15" y="457.02">-----------::.. -*%##****###*++++*******#%@@= .:::-----:</tspan>
 </text>
-<text x="481.59999999999997" y="30" fill="#24292f">
-<tspan x="481.59999999999997" y="30"><tspan class="key">adalbertdb@github </tspan><tspan class="cc">--------------------------------------------</tspan></tspan>
-<tspan x="481.59999999999997" y="50"><tspan class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">:</tspan><tspan class="cc"> ............................. </tspan><tspan class="value">Windows 11, Linux, Android</tspan></tspan>
-<tspan x="481.59999999999997" y="70"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="value">-</tspan></tspan>
-<tspan x="481.59999999999997" y="90"><tspan class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">Gandía, Spain</tspan></tspan>
-<tspan x="481.59999999999997" y="110"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan><tspan class="cc">:</tspan><tspan class="cc"> ............. </tspan><tspan class="value">Founder @ Aparcaloo (pre-founding ofc)</tspan></tspan>
-<tspan x="481.59999999999997" y="130"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................... </tspan><tspan class="value">VS Code (aaahh-vscode), Claude Code</tspan></tspan>
-<tspan x="481.59999999999997" y="170"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc">:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">Java, Rust, Python, JavaScript</tspan></tspan>
-<tspan x="481.59999999999997" y="190"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer</tspan><tspan class="cc">:</tspan><tspan class="cc"> .......... </tspan><tspan class="value">HTML, CSS, JSON, SQL, PostGIS</tspan></tspan>
-<tspan x="481.59999999999997" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages.Real</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">Spanish, English</tspan></tspan>
-<tspan x="481.59999999999997" y="250"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Local LLMs, agentic workflows, MCP</tspan></tspan>
-<tspan x="481.59999999999997" y="270"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Squeezing Gemma 3 into 4GB of VRAM</tspan></tspan>
-<tspan x="481.59999999999997" y="290"><tspan class="cc">- </tspan><tspan class="key">Contact</tspan><tspan class="cc"> ----------------------------------------------------</tspan></tspan>
-<tspan x="481.59999999999997" y="310"><tspan class="cc">. </tspan><tspan class="key">Email.Personal</tspan><tspan class="cc">:</tspan><tspan class="cc"> .......................................... </tspan><tspan class="value">-</tspan></tspan>
-<tspan x="481.59999999999997" y="330"><tspan class="cc">. </tspan><tspan class="key">Email.Work</tspan><tspan class="cc">:</tspan><tspan class="cc"> .............................................. </tspan><tspan class="value">-</tspan></tspan>
-<tspan x="481.59999999999997" y="350"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................................ </tspan><tspan class="value">-</tspan></tspan>
-<tspan x="481.59999999999997" y="370"><tspan class="cc">. </tspan><tspan class="key">Discord</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................................. </tspan><tspan class="value">-</tspan></tspan>
-<tspan x="481.59999999999997" y="390"><tspan class="cc">- </tspan><tspan class="key">GitHub Stats</tspan><tspan class="cc"> -----------------------------------------------</tspan></tspan>
-<tspan x="481.59999999999997" y="410"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....................... </tspan><tspan class="value">- {Contributed: -} | Stars: -</tspan></tspan>
-<tspan x="481.59999999999997" y="430"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">- | Followers: -</tspan></tspan>
-<tspan x="481.59999999999997" y="450"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">- ( </tspan><tspan class="add">-++</tspan><tspan class="value">, </tspan><tspan class="del">---</tspan><tspan class="value"> )</tspan></tspan>
+<text x="388" y="30" fill="#24292f">
+<tspan x="388" y="30"><tspan class="key">adalbertdb@github </tspan><tspan class="cc">--------------------------------------------</tspan></tspan>
+<tspan x="388" y="50"><tspan class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">:</tspan><tspan class="cc"> ............................. </tspan><tspan class="value">Windows 11, Linux, Android</tspan></tspan>
+<tspan x="388" y="70"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="value">-</tspan></tspan>
+<tspan x="388" y="90"><tspan class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">Gandía, Spain</tspan></tspan>
+<tspan x="388" y="110"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan><tspan class="cc">:</tspan><tspan class="cc"> ............. </tspan><tspan class="value">Founder @ Aparcaloo (pre-founding ofc)</tspan></tspan>
+<tspan x="388" y="130"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................... </tspan><tspan class="value">VS Code (aaahh-vscode), Claude Code</tspan></tspan>
+<tspan x="388" y="170"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc">:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">Java, Rust, Python, JavaScript</tspan></tspan>
+<tspan x="388" y="190"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer</tspan><tspan class="cc">:</tspan><tspan class="cc"> .......... </tspan><tspan class="value">HTML, CSS, JSON, SQL, PostGIS</tspan></tspan>
+<tspan x="388" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages.Real</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">Spanish, English</tspan></tspan>
+<tspan x="388" y="250"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Local LLMs, agentic workflows, MCP</tspan></tspan>
+<tspan x="388" y="270"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Squeezing Gemma 3 into 4GB of VRAM</tspan></tspan>
+<tspan x="388" y="290"><tspan class="cc">- </tspan><tspan class="key">Contact</tspan><tspan class="cc"> ----------------------------------------------------</tspan></tspan>
+<tspan x="388" y="310"><tspan class="cc">. </tspan><tspan class="key">Email.Personal</tspan><tspan class="cc">:</tspan><tspan class="cc"> .......................................... </tspan><tspan class="value">-</tspan></tspan>
+<tspan x="388" y="330"><tspan class="cc">. </tspan><tspan class="key">Email.Work</tspan><tspan class="cc">:</tspan><tspan class="cc"> .............................................. </tspan><tspan class="value">-</tspan></tspan>
+<tspan x="388" y="350"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................................ </tspan><tspan class="value">-</tspan></tspan>
+<tspan x="388" y="370"><tspan class="cc">. </tspan><tspan class="key">Discord</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................................. </tspan><tspan class="value">-</tspan></tspan>
+<tspan x="388" y="390"><tspan class="cc">- </tspan><tspan class="key">GitHub Stats</tspan><tspan class="cc"> -----------------------------------------------</tspan></tspan>
+<tspan x="388" y="410"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....................... </tspan><tspan class="value">- {Contributed: -} | Stars: -</tspan></tspan>
+<tspan x="388" y="430"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">- | Followers: -</tspan></tspan>
+<tspan x="388" y="450"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">- ( </tspan><tspan class="add">-++</tspan><tspan class="value">, </tspan><tspan class="del">---</tspan><tspan class="value"> )</tspan></tspan>
 </text>
 </svg>
