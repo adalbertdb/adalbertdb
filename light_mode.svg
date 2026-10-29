@@ -56,8 +56,8 @@ text, tspan {white-space: pre;}
 <tspan x="389" y="311"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Local LLMs, agentic workflows, MCP</tspan></tspan>
 <tspan x="389" y="331"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Squeezing Gemma 3 into 4GB of VRAM</tspan></tspan>
 <tspan x="389" y="351"><tspan class="cc">- </tspan><tspan class="key">GitHub Stats</tspan><tspan class="cc"> -----------------------------------------------</tspan></tspan>
-<tspan x="389" y="371"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....................... </tspan><tspan class="value">- {Contributed: -} | Stars: -</tspan></tspan>
-<tspan x="389" y="391"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">- | Followers: -</tspan></tspan>
-<tspan x="389" y="411"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan><tspan class="cc">:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">- ( </tspan><tspan class="add">-++</tspan><tspan class="value">, </tspan><tspan class="del">---</tspan><tspan class="value"> )</tspan></tspan>
+<tspan x="389" y="371"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">26 {Contributed: 6} | Stars: 2</tspan></tspan>
+<tspan x="389" y="391"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">818 | Followers: 5</tspan></tspan>
+<tspan x="389" y="411"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan><tspan class="cc">:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">64,578 ( </tspan><tspan class="add">98,972++</tspan><tspan class="value">, </tspan><tspan class="del">34,394--</tspan><tspan class="value"> )</tspan></tspan>
 </text>
 </svg>
