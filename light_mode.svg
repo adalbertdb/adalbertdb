@@ -45,7 +45,7 @@ text, tspan {white-space: pre;}
 <text x="389" y="71" fill="#24292f">
 <tspan x="389" y="71"><tspan class="key">adalbertdb@github </tspan><tspan class="cc">--------------------------------------------</tspan></tspan>
 <tspan x="389" y="91"><tspan class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">Linux (Omarchy)</tspan></tspan>
-<tspan x="389" y="111"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">21 years, 5 months, 17 days</tspan></tspan>
+<tspan x="389" y="111"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">21 years, 5 months, 18 days</tspan></tspan>
 <tspan x="389" y="131"><tspan class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">:</tspan><tspan class="cc"> .......................... </tspan><tspan class="value">Comunidad Valenciana, Spain</tspan></tspan>
 <tspan x="389" y="151"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan><tspan class="cc">:</tspan><tspan class="cc"> ............. </tspan><tspan class="value">Founder @ Aparcaloo (pre-founding ofc)</tspan></tspan>
 <tspan x="389" y="171"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">:</tspan><tspan class="cc"> ..................................... </tspan><tspan class="value">Claude Code, nvim</tspan></tspan>
@@ -57,7 +57,7 @@ text, tspan {white-space: pre;}
 <tspan x="389" y="331"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan><tspan class="cc">:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">Squeezing Gemma 3 into 4GB of VRAM</tspan></tspan>
 <tspan x="389" y="351"><tspan class="cc">- </tspan><tspan class="key">GitHub Stats</tspan><tspan class="cc"> -----------------------------------------------</tspan></tspan>
 <tspan x="389" y="371"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">26 {Contributed: 6} | Stars: 2</tspan></tspan>
-<tspan x="389" y="391"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">818 | Followers: 5</tspan></tspan>
+<tspan x="389" y="391"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan><tspan class="cc">:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">819 | Followers: 5</tspan></tspan>
 <tspan x="389" y="411"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan><tspan class="cc">:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">64,578 ( </tspan><tspan class="add">98,972++</tspan><tspan class="value">, </tspan><tspan class="del">34,394--</tspan><tspan class="value"> )</tspan></tspan>
 </text>
 </svg>
